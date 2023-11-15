@@ -12,9 +12,10 @@ export const computeProductTotalPrice = (product: Product): iProductWithTotalPri
     }
   }
 
-  const totalPrice = Number(product.basePrice) * (product.discountPercentage / 100) 
+  const discount = Number(product.basePrice) * (product.discountPercentage / 100) 
+  const totalPrice = Number(product.basePrice) - discount
   return {
     ...product,
-    totalPrice
+    totalPrice,
   }
 }

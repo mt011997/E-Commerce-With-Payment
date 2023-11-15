@@ -29,8 +29,8 @@ const ProductItem = ({ product }: iProductItemProps) => {
         )}
       </div>
 
-      <div className="flex items-center gap-2">
-        <p className="text-sm truncate">{product.name}</p>
+      <div className="flex flex-col items-center gap-2">
+        <p className="text-sm truncate max-w-[156px]">{product.name}</p>
         <div className="flex items-center gap-2">
           {product.discountPercentage > 0 ? (
             <>
