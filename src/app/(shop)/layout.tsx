@@ -25,6 +25,7 @@ export default function RootLayout({
           <AuthProvider>
             <CartProvider>
               <Header />
+              <p className="text-white font-bold text-4xl text-center p-5 ">Aplicação para fins de estudo, a área de pagamento apenas simula o pagamento, mas por segurança, use dados fakes, não forneça seus dados pessoais! Use o número de cartão: 4242 4242 4242 4242 para concluir uma compra!</p>
               <div className="flex-1">{children}</div>
               <Footer />
             </CartProvider>
